@@ -45,11 +45,23 @@ var output = document.querySelector('body p:nth-of-type(2)');
 		Without the ability to edit the contents of an array, this type of variable would have limited use - but adding and removing array items is pretty straightforward */
 
 		// Adding one or more items to an array with push()
+		// it will give the length of the array
+		var pushArray= newArray.push("newValue");
+		output.textContent=pushArray;
 
 		// Removing an item from an array with pop()
-		
+		// it will give the name or the element which is pop
+		var popArray= newArray.pop();
+		output.textContent= popArray;
 		// pop() returns the item that was removed, rather than the length of the updated array
 
 		// To do the same thing, that is, to add and remove an item from the beginning of the array, use shift() and unshift()
+		// it will remove the element from the left(reverse from the pop)
+		var shiftArray= newArray.shift();
+		output.textContent(shiftArray)
+		// this will return the length after adding
+		var unshiftArray= newArray.unshift("newAddedShift");
+		output.textContent= unshiftArray;
 		
 		/* That's it for the basics of working with arrays! With these tools at your disposal, a whole new world of possibilities with JavaScript are at your command */
+
